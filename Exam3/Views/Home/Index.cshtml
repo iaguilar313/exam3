@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class="table table-inverse">
+    <tr>
+        <th>
+            OrderID
+        </th>
+        <th>
+            CustomerID
+        </th>
+        <th>
+            EmmployeeID
+        </th>
+    
+    </tr>
+
+    @foreach (var Element in ViewBag.Orders)
+    {
+        <tr>
+            <td>
+                @Element.OrderID
+            </td>
+            <td>
+                @Element.CustomerID
+            </td>
+            <td>
+                @Element.EmployeeID
+            </td>
+            <
+        </tr>
+    }
+
+</table>
